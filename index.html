@@ -15,8 +15,13 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body>
+    <!--                            -->
+    <!--..  /\_/\  -->
+    <!--. ( o.o )  [MEOW: Hire me! or I will destroy the world!]  -->
+    <!--.. > ^ <  -->
+
     <nav id="desktop-nav">
-      <div class="logo">Dhruvadeep</div>
+      <div class="logo">Dhruvadeep Malakar</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -26,5 +31,25 @@
         </ul>
       </div>
     </nav>
+    <!-- Hamburger Menu -->
+    <nav id="hamburger-nav">
+      <div class="logo">Dhruvadeep Malakar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sections -->
+    <section id="profile"></section>
   </body>
 </html>
