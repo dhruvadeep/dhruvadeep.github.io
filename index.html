@@ -13,6 +13,26 @@
 
     <!-- JS Files -->
     <script src="scripts/index.js" defer></script>
+
+    <style>
+      .details-container {
+        padding: 40px;
+        /* add spacing between p and h3 */
+      }
+
+      .details-container .icon {
+        margin-bottom: 10px; /* Add space below the icon */
+      }
+
+      .details-container h3 {
+        margin-top: 10px;
+        margin-bottom: 10px; /* Add space below the heading */
+      }
+
+      .details-container p {
+        margin-top: 5px; /* Add space above each paragraph */
+      }
+    </style>
   </head>
   <body>
     <!--                            -->
@@ -50,6 +70,102 @@
     </nav>
 
     <!-- Sections -->
-    <section id="profile"></section>
+    <section id="profile">
+      <div class="section__pic-container">
+        <!-- add border dotted -->
+        <img
+          src="./assets/profile-pic.png"
+          alt="Dhruvadeep profile picture"
+          style="
+            border: 2px dotted lightgray;
+            border-radius: 50%;
+            background-color: #d2d6db;
+          "
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title" style="padding: 10px 0px">Dhruvadeep Malakar</h1>
+        <p class="section__text__p2">Data Scientist</p>
+        <div class="btn-container" style="padding: 10px 0px">
+          <button class="btn btn-color-2" onclick="window.open('./resume.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/dhruvadeepm/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/dhruvadeep/'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" style="padding-top: 100px">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years in Application Development</p>
+              <p>1+ years in Software Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech. IIT Palakkad (Data Science)</p>
+              <p>School. MVM Guwahati (Science)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p class="text-details">
+              A driven data science student with a notable inclination towards
+              application development and a thorough grasp of computer networks.
+              Pursuing opportunities to merge proficiency in data science with a
+              passion for crafting inventive applications. By integrating skills
+              in data analytics and application development, striving to devise
+              impactful solutions that cater to user requirements, streamline
+              processes, and foster business expansion
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
   </body>
 </html>
