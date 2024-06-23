@@ -32,6 +32,33 @@
       .details-container p {
         margin-top: 5px; /* Add space above each paragraph */
       }
+
+      /* PROJECTS SECTION */
+
+      #projects {
+        position: relative;
+      }
+
+      .color-container {
+        border-color: rgb(163, 163, 163);
+        background: rgb(250, 250, 250);
+      }
+
+      .project-img {
+        border-radius: 2rem;
+        width: 90%;
+        height: 90%;
+      }
+
+      .project-title {
+        margin: 1rem;
+        color: black;
+      }
+
+      .project-btn {
+        color: black;
+        border-color: rgb(163, 163, 163);
+      }
     </style>
   </head>
   <body>
@@ -379,5 +406,314 @@
         onclick="location.href='./#projects'"
       />
     </section>
+
+    <!-- Dhruvadeep Malakar -->
+    <!-- IITian Palakkad -->
+    <!-- Data Scientist -->
+    <!--  -->
+    <!-- World might be cruel also Rome was not built in a day.  -->
+    <!-- But for our sake this project was done is 8 hours and 30 minutes. -->
+    <!--  -->
+    <!-- I dont know it took 2 months of planning and proper database authentication and security. -->
+    <!-- Almost perfect except need to work more on UI -->
+
+    <!-- Projects -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title" style="padding-top: 10px">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <style>
+            /* project-flex will have each row 3 item such that if there are none put whitespace*/
+            /* Use grid and take 100% width */
+
+            /* .project-flex {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 20px;
+              } */
+
+            .project-flex {
+              display: grid;
+              grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+              gap: 20px;
+            }
+          </style>
+          <!-- <div class="project-flex"> -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/cif.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              CIF Slot Booking System (Auth + Role Based Access)
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/dhruvadeep/slot-booking-system-cif'"
+              >
+                Github
+              </button>
+              <!-- CUSTOM STYLE -->
+              <style>
+                /* button:disabled,
+                    button[disabled] {
+                      cursor: not-allowed;
+                    } */
+                #cif-demo:disabled,
+                #cif-demo[disabled] {
+                  cursor: default; /* Default cursor */
+                  background-color: rgb(155, 153, 153); /* Grey background */
+                  color: lightgrey; /* Lighter text color */
+                }
+              </style>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://project.dhruvadeep.dev/'"
+                disabled
+                id="cif-demo"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/social.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Social Media API with OAuth2
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/dhruvadeep/SocialMedia-API'"
+              >
+                Github
+              </button>
+              <!-- CUSTOM STYLE -->
+              <style>
+                /* button:disabled,
+                    button[disabled] {
+                      cursor: not-allowed;
+                    } */
+                #cif-demo:disabled,
+                #cif-demo[disabled] {
+                  cursor: default; /* Default cursor */
+                  background-color: rgb(155, 153, 153); /* Grey background */
+                  color: lightgrey; /* Lighter text color */
+                }
+              </style>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://project.dhruvadeep.dev/'"
+                disabled
+                id="cif-demo"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/design.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Fashion Recommendation System (React Native)
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://dhruvadeep.dev/private-repo'"
+              >
+                Github
+              </button>
+              <!-- CUSTOM STYLE -->
+              <style>
+                /* button:disabled,
+                    button[disabled] {
+                      cursor: not-allowed;
+                    } */
+                #cif-demo:disabled,
+                #cif-demo[disabled] {
+                  cursor: default; /* Default cursor */
+                  background-color: rgb(155, 153, 153); /* Grey background */
+                  color: lightgrey; /* Lighter text color */
+                }
+              </style>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://project.dhruvadeep.dev/'"
+                disabled
+                id="cif-demo"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- </div> -->
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <!-- Contact -->
+    <style>
+      /* CONTACT */
+
+      #contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 70vh;
+      }
+
+      .contact-info-upper-container {
+        display: flex;
+        justify-content: center;
+        border-radius: 2rem;
+        border: rgb(53, 53, 53) 0.1rem solid;
+        border-color: rgb(163, 163, 163);
+        background: (250, 250, 250);
+        margin: 2rem auto;
+        padding: 0.5rem;
+      }
+
+      .contact-info-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 1rem;
+      }
+
+      .contact-info-container p {
+        font-size: larger;
+      }
+
+      .contact-icon {
+        cursor: default;
+      }
+
+      .email-icon {
+        height: 2.5rem;
+      }
+
+      /* FOOTER SECTION */
+
+      footer {
+        height: 26vh;
+        margin: 0 1rem;
+      }
+
+      footer p {
+        text-align: center;
+      }
+    </style>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:examplemail@gmail.com">contact@dhruvadeep.dev</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/dhruvadeepm">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="https://blog.dhruvadeep.dev/">Blog</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Dhruvadeep Malakar</p>
+      <!-- font size down and reduce opacity -->
+      <p style="font-size: 0.8rem; opacity: 0.5; padding-top: 2px">
+        Keep moving forward, & you'll never have a reason to look back
+      </p>
+    </footer>
   </body>
 </html>
